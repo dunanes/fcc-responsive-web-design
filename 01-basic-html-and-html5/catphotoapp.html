@@ -35,7 +35,24 @@
     <p>Insert a cat photo URL below:</p>
     <form action="https://www.freecatphotoapp.com/submit-cat-photo">
         <input type="text" placeholder="cat photo URL">
+        <button type="submit">submit</button>
     </form>
+
+    <!-- One simple way of implementing radio buttons -->
+    <label>
+        <input type="radio" name="indoor-outdoor">Indoor
+    </label>
+
+    <!-- Other way, best for assistive technologies by using "id" -->
+    <input id="indoor" type="radio" name="indoor-outdoor">
+    <label for="indoor">Inbetween</label>
+
+    <!-- Nesting it within label tags -->
+    <label for="indoor">
+        <input id="indoor" type="radio" name="indoor-outdoor">Outdoor
+    </label>
+
+
 </main>
 
 <footer id="footer">Copyright Cat Photo App</footer>
